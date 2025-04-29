@@ -1,0 +1,67 @@
+.book-viewer-container {
+  width: 100%;
+  height: 600px;
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.book-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.book-viewer-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+.book-viewer-loading p {
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  background-color: rgba(100, 108, 255, 0.8);
+  border-radius: 4px;
+}
+
+.book-viewer-error {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.book-viewer-error p {
+  color: #d32f2f;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .book-viewer-container {
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-viewer-container {
+    height: 400px;
+  }
+} 
