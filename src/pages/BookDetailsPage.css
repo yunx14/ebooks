@@ -1,0 +1,136 @@
+.book-details-page {
+  padding: 20px 0;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #646cff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back-button:hover {
+  color: #535bf2;
+}
+
+.book-details-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+}
+
+.book-cover {
+  position: relative;
+  max-width: 250px;
+  min-height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.book-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.no-cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-title {
+  font-size: 2rem;
+  margin: 0;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.book-authors {
+  font-size: 1.2rem;
+  color: #b8b8b8;
+}
+
+.book-published, .book-publisher {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.book-description {
+  margin-top: 10px;
+}
+
+.book-description h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.book-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.book-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.read-button, .preview-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.read-button {
+  background-color: #646cff;
+  color: white;
+}
+
+.read-button:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+}
+
+.preview-button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #646cff;
+}
+
+.preview-button:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .book-details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    margin: 0 auto 20px;
+  }
+} 
